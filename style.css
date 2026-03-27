@@ -41,11 +41,16 @@ body {
 }
 
 @media (max-width: 767px) {
-  section:not(.hero-section):not(.full-width-light) {
-    padding-left: 0px; 
-    padding-right: 0px;
+  section {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .container {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
   }
 }
+
 
 
 
@@ -206,11 +211,17 @@ a {
   overflow: hidden;
 }
 
+@media(max-width: 767px) {
+  .hero-section {
+    padding: 60px 0 80px;
+  }
+}
 @media(min-width: 768px) {
   .hero-section {
     padding: 120px 0;
   }
 }
+
 
 .hero-container {
   display: flex;
@@ -673,27 +684,16 @@ a {
   gap: 12px;
 }
 @media (max-width: 767px) {
-  .container {
-    padding: 0 24px;
-  }
-  
   .full-width-light {
     padding-left: 0;
     padding-right: 0;
-  }
-  
-  .full-width-light > .container {
-    padding: 0 24px;
-  }
-  
-  .hero-container {
-    padding: 0 24px;
   }
   
   .btn-pro-align {
     width: 100%;
   }
 }
+
 
 .btn-pro-align {
   width: fit-content;
